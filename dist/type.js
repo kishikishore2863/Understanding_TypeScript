@@ -6,48 +6,29 @@
 // const n2 = 2;
 // const n3 = true;
 // console.log(add(n1, n2, n3));
-// const person: {
-//   name: String;
-//   age: number;
-//   hobbies: string[];
-//   role: [number, string];
-// } = {
-//   name: "kishore",
-//   age: 20,
-//   hobbies: ["sports", "learning"],
-//   role: [1, "kishi"],
-// };
-// console.log(person.role);
-// const ADMIN = 0;
-// const USER = 1;
-// enum Role {
-//   ADMIN,
-//   Readmy = 100,
-//   author,
-// }
-// const person: {
-//   name: String;
-//   age: number;
-//   hobbies: string[];
-//   role: Number;
-// } = {
-//   name: "kishore",
-//   age: 20,
-//   hobbies: ["sports", "learning"],
-//   role: Role.ADMIN,
-// };
-// console.log(person.role);
-function greet(firstName) {
-    console.log("hello " + firstName);
+const user = {
+    name: "string",
+    age: 12,
+    email: "string"
+};
+function test(user) {
+    console.log(user.name);
 }
-greet("kishi");
-function sum(a, b) {
-    return a + b;
+test(user);
+const teamLead = {
+    name: "string",
+    startDate: new Date(),
+    department: "string"
+};
+var Direction;
+(function (Direction) {
+    Direction[Direction["Up"] = 0] = "Up";
+    Direction[Direction["Left"] = 1] = "Left";
+    Direction[Direction["Down"] = 2] = "Down";
+    Direction[Direction["Right"] = 3] = "Right";
+})(Direction || (Direction = {}));
+function doSomething(key) {
+    console.log(key + "from ");
 }
-console.log(sum(3, 2));
-function runAfter1s(fn) {
-    setTimeout(fn, 1000);
-}
-runAfter1s(function () {
-    console.log("hi there");
-});
+doSomething(Direction.Down);
+doSomething(Direction.Up);
