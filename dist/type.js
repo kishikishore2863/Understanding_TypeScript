@@ -28,7 +28,8 @@ var Direction;
     Direction[Direction["Right"] = 3] = "Right";
 })(Direction || (Direction = {}));
 function doSomething(key) {
-    console.log(key + "from ");
+    console.log(key);
 }
 doSomething(Direction.Down);
 doSomething(Direction.Up);
+doSomething(Direction.Right);

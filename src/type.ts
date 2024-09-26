@@ -200,9 +200,9 @@ enum Direction{
 }
 
 function doSomething(key:Direction){
-  
+  console.log(key)
 }
 
-doSomething(Direction.Down)
+doSomething(Direction.Down);
 doSomething(Direction.Up)
 doSomething(Direction.Right)
