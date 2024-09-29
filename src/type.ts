@@ -206,3 +206,24 @@ function doSomething(key:Direction){
 doSomething(Direction.Down);
 doSomething(Direction.Up)
 doSomething(Direction.Right)
+
+
+
+
+
+
+type Input=number | string;
+function firstEl(arr:Input[]){
+  return arr[0]
+}
+const value =firstEl(["harkirat","sigh"])
+console.log()
+
+
+
+function identity<T>(arr:T[]):T{
+  return arr[0];
+}
+
+let output =identity<string>(["mystring","knkkj"]);
+let output2 =identity<number>([1,2,3]);
