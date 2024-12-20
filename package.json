@@ -2,14 +2,13 @@
   "name": "typescript",
   "version": "1.0.0",
   "description": "",
-  "main": "type.js",
+  "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "lite-server"
+    "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "author": "kishore",
+  "author": "",
   "license": "ISC",
-  "devDependencies": {
-    "lite-server": "^2.6.1"
+  "dependencies": {
+    "typescript": "^5.7.2"
   }
 }
